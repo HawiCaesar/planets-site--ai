@@ -8,4 +8,4 @@ Still a work in progress
 - Mobile responsiveness on small screens like ipad have some issues
 - planet images are squeezed on some smaller screens
 
-[planet-site-jupiter-ai](./planets-site-jupiter.png)
+[<img src="./planets-site-jupiter.png"/>](https://google.com)
