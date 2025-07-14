@@ -1,0 +1,117 @@
+.planet-content {
+  max-width: 350px;
+}
+
+.planet-content__title {
+  font-family: var(--font-antonio);
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: -1.5px;
+  color: var(--color-white);
+  margin-bottom: 1.5rem;
+}
+
+.planet-content__text {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--color-light-gray);
+  margin-bottom: 1.5rem;
+}
+
+.planet-content__source {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.planet-content__source-label {
+  font-size: 0.875rem;
+  color: var(--color-light-gray);
+  opacity: 0.5;
+}
+
+.planet-content__source-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-light-gray);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.planet-content__source-link:hover {
+  color: var(--color-white);
+}
+
+.planet-content__source-link img {
+  width: 12px;
+  height: 12px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.planet-content__source-link:hover img {
+  opacity: 1;
+}
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+  .planet-content {
+    max-width: 339px;
+    text-align: center;
+  }
+  
+  .planet-content__title {
+    font-size: 3rem;
+    letter-spacing: -1.05px;
+    margin-bottom: 1rem;
+  }
+  
+  .planet-content__text {
+    font-size: 0.6875rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .planet-content__source {
+    justify-content: center;
+  }
+  
+  .planet-content__source-label,
+  .planet-content__source-link {
+    font-size: 0.75rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  .planet-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .planet-content__title {
+    font-size: 2.5rem;
+    letter-spacing: -1.5px;
+    margin-bottom: 1rem;
+  }
+  
+  .planet-content__text {
+    font-size: 0.6875rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .planet-content__source {
+    justify-content: center;
+  }
+  
+  .planet-content__source-label,
+  .planet-content__source-link {
+    font-size: 0.75rem;
+  }
+} 

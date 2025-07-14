@@ -1,0 +1,88 @@
+.planet-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.875rem;
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+.planet-stats__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  min-height: 88px;
+}
+
+.planet-stats__label {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--color-light-gray);
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+
+.planet-stats__value {
+  font-family: var(--font-antonio);
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: -1.5px;
+  color: var(--color-white);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+  .planet-stats {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.6875rem;
+    margin-top: 1.75rem;
+  }
+  
+  .planet-stats__item {
+    padding: 1rem 0.9375rem;
+    min-height: 80px;
+  }
+  
+  .planet-stats__label {
+    font-size: 0.5rem;
+    letter-spacing: 0.7px;
+  }
+  
+  .planet-stats__value {
+    font-size: 1.5rem;
+    letter-spacing: -0.9px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  .planet-stats {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    margin-top: 1.75rem;
+  }
+  
+  .planet-stats__item {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5625rem 1.5rem;
+    min-height: 48px;
+  }
+  
+  .planet-stats__label {
+    font-size: 0.5rem;
+    letter-spacing: 0.7px;
+    margin-bottom: 0;
+  }
+  
+  .planet-stats__value {
+    font-size: 1.25rem;
+    letter-spacing: -0.75px;
+  }
+} 

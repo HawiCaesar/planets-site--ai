@@ -1,0 +1,89 @@
+.planet-detail {
+  flex: 1;
+  padding: 7.5rem 0 3.5rem;
+}
+
+.planet-detail__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.planet-detail__content {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 7.8125rem;
+  align-items: center;
+  margin-bottom: 5.4375rem;
+}
+
+.planet-detail__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+}
+
+.planet-detail__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4375rem;
+  max-width: 350px;
+}
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+  .planet-detail {
+    padding: 4.375rem 0 2.25rem;
+  }
+  
+  .planet-detail__container {
+    padding: 0 2.5rem;
+  }
+  
+  .planet-detail__content {
+    grid-template-columns: 1fr;
+    gap: 4.1875rem;
+    text-align: center;
+    margin-bottom: 1.6875rem;
+  }
+  
+  .planet-detail__image {
+    min-height: 350px;
+  }
+  
+  .planet-detail__info {
+    max-width: 100%;
+    align-items: center;
+    gap: 1.6875rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  .planet-detail {
+    padding: 0 0 2.9375rem;
+  }
+  
+  .planet-detail__container {
+    padding: 0 1.5rem;
+  }
+  
+  .planet-detail__content {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-bottom: 1.75rem;
+  }
+  
+  .planet-detail__image {
+    min-height: 304px;
+    order: 1;
+  }
+  
+  .planet-detail__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    order: 2;
+  }
+} 
