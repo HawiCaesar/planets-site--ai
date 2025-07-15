@@ -53,8 +53,10 @@
 }
 
 .planet-image--saturn .planet-image__main {
-  width: 666px;
-  height: 583px;
+  max-width: 666px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 666 / 583;
 }
 
 .planet-image--uranus .planet-image__main {
@@ -99,8 +101,10 @@
   }
   
   .planet-image--saturn .planet-image__main {
-    width: 422px;
-    height: 370px;
+    max-width: 422px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 666 / 583;
   }
   
   .planet-image--uranus .planet-image__main {
@@ -152,8 +156,10 @@
   }
   
   .planet-image--saturn .planet-image__main {
-    width: 256px;
-    height: 224px;
+    max-width: 256px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 666 / 583;
   }
   
   .planet-image--uranus .planet-image__main {

@@ -3,10 +3,6 @@ import planetsData from '../data.json';
 
 const planets: Planet[] = planetsData as Planet[];
 
-export const getAllPlanets = (): Planet[] => {
-  return planets;
-};
-
 export const getPlanetByName = (name: string): Planet | undefined => {
   return planets.find(planet => planet.name.toLowerCase() === name.toLowerCase());
 };
